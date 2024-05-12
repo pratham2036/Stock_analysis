@@ -6,28 +6,28 @@ load_dotenv(dotenv_path)
 API_KEY=os.getenv("API_KEY")
 
 user_input = input("Enter Stock: ")
-wb = load_workbook(filename='Book1.xlsx')
-ws = wb.active
-ws['A1'].value='Stock-ticker'
-ws['B1'].value='Date'
-ws['C1'].value='Eps'
-ws['D1'].value='Revenue'
-ws['E1'].value='EPS_YOY_growth'
+wb = Workbook()
+sheet = wb.active
+sheet['A1']='Stock-ticker'
+sheet['B1'].value='Date'
+sheet['C1'].value='Eps'
+sheet['D1'].value='Revenue'
+sheet['E1'].value='EPS_YOY_growth'
 
-ws['F1'].value='Revenue_YOY_growth'
-ws['G1'].value='Market_capital'
-ws['H1'].value='Short_intrest'
-ws['A2'].value=''
-ws['B2'].value=''
-ws['C2'].value=''
-ws['D2'].value=''
-ws['E2'].value=''
+sheet['F1']='Revenue_YOY_growth'
+sheet['G1']='Market_capital'
+sheet['H1']='Short_intrest'
+sheet['A2']=''
+sheet['B2']=''
+sheet['C2']=''
+sheet['D2']=''
+sheet['E2']=''
 
-ws['F2'].value=''
-ws['G2'].value=''
-ws['H2'].value=''
+sheet['F2']=''
+sheet['G2']=''
+sheet['H2']=''
 
-wb.save('Book1.xlsx')
+wb.save(filename="Book1.xlsx")
     
 def get_start_of_current_week():
     today = datetime.date.today()
