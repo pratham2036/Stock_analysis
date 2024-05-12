@@ -35,10 +35,11 @@ Run the script python main.py
 
 1. Only us stocks are available to search in free plan
 2. Only following stocks have valid earnings for ongoing week
+    ARTNA (Artesian Resources Corporation Class A)
     DIS.NE (Disney)
     AMD.NE (AMD)
     CBST.NE (Columbia Banking System)
-3. Close the EarningsReport.xlsx before re-running the script. It imposes the permission issues on windows.
+4. Close the EarningsReport.xlsx before re-running the script. It imposes the permission issues on windows.
 
 ## Contribution and Feedback
 Feel free to give feedback on this program. 
